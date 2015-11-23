@@ -10,5 +10,6 @@ import UIKit
 
 class AnimTabVC: UITabBarController {
     let size = UIScreen.mainScreen().bounds.size
+    let p: CGFloat = 0.8
     lazy var backgroundView: UIView = {UIView()}()
 }

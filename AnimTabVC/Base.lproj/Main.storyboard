@@ -66,7 +66,7 @@
         <!--Item 1-->
         <scene sceneID="7H1-3n-ECl">
             <objects>
-                <viewController id="PQR-zW-EM6" sceneMemberID="viewController">
+                <viewController id="PQR-zW-EM6" customClass="ViewController" customModule="AnimTabVC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vtn-Ch-jn2"/>
                         <viewControllerLayoutGuide type="bottom" id="h94-wN-250"/>
@@ -110,7 +110,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="67n-3c-RoS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="590" y="513"/>
+            <point key="canvasLocation" x="729" y="514"/>
         </scene>
     </scenes>
 </document>
