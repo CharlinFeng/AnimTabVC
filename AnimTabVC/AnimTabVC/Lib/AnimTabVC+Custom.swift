@@ -25,16 +25,23 @@ extension AnimTabVC {
         }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        
+        if isHandTintColor {return}
+        
+        var width: CGFloat {return size.width / CGFloat(viewControllers!.count)}
         
         backgroundView.backgroundColor = UIColor.redColor()
         backgroundView.frame = CGRectMake(0, 0, width, 49)
         tabBar.insertSubview(backgroundView, atIndex: 0)
-       
+        
         selectedViewControllerKVO()
         
         tabBar.barTintColor = UIColor.darkGrayColor()
+        
+        isHandTintColor = true
     }
     
     /** 监听选中控制器事件 */
